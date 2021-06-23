@@ -1,4 +1,6 @@
-const createFavicons = (icons) => {
+const createFavicons = (icons, b) => {
+  console.log('aiiii', icons)
+  console.log('ooouuuuu', b)
   if (!icons) {
     console.warn('Theme Favicon: no favicon URLs found.')
     return

@@ -4,7 +4,9 @@
   (global = global || self, factory(global.ThemeFavicon = {}));
 }(this, (function (exports) { 'use strict';
 
-  var createFavicons = function (icons) {
+  var createFavicons = function (icons, b) {
+    console.log('aiiii', icons);
+    console.log('ooouuuuu', b);
     if (!icons) {
       console.warn('Theme Favicon: no favicon URLs found.');
       return
