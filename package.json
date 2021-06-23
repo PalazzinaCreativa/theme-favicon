@@ -1,6 +1,6 @@
 {
   "name": "themefavicon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/themefavicon.umd.js",
   "module": "dist/themefavicon.esm.js",
   "unpkg": "dist/themefavicon.min.js",
