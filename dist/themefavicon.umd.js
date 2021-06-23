@@ -4,9 +4,7 @@
   (global = global || self, factory(global.ThemeFavicon = {}));
 }(this, (function (exports) { 'use strict';
 
-  var createFavicons = function (icons, b) {
-    console.log('aiiii', icons);
-    console.log('ooouuuuu', b);
+  var createFavicons = function (vue, icons) {
     if (!icons) {
       console.warn('Theme Favicon: no favicon URLs found.');
       return
@@ -30,7 +28,8 @@
       // Light theme
       : icons.lightThemeIcon;
 
-    document.head.removeChild(document.querySelector('[rel=icon]'));
+    var currentIcon = document.querySelector('[rel=icon]');
+    if (currentIcon) { document.head.removeChild(currentIcon); }
     document.head.appendChild(favicon);
   };
 
