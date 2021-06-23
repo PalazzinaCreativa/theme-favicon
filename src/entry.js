@@ -23,7 +23,8 @@ const createFavicons = (vue, icons) => {
     : icons.lightThemeIcon
 
   const currentIcon = document.querySelector('[rel=icon]')
-  if (currentIcon) document.head.removeChild(currentIcon)
+  // Check if current icon exists and is a DOM element
+  if (currentIcon && (currentIcon instanceof Element || currentIcon instanceof HTMLDocument)) document.head.removeChild(currentIcon)
   document.head.appendChild(favicon)
 }
 
