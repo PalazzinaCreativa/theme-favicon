@@ -29,8 +29,8 @@
       : icons.lightThemeIcon;
 
     var currentIcon = document.querySelector('[rel=icon]');
-    // Check if current icon exists and is a DOM element
-    if (currentIcon && (currentIcon instanceof Element || currentIcon instanceof HTMLDocument)) { document.head.removeChild(currentIcon); }
+    // Check if current icon exists and is a
+    if (currentIcon) { currentIcon.parentNode.removeChild(currentIcon); }
     document.head.appendChild(favicon);
   };
 
