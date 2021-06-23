@@ -17,6 +17,7 @@
       console.warn('Theme Favicon: no favicon URL for light theme found.');
       return
     }
+    console.log('ththht', window, window.matchMedia, window.matchMedia('(prefers-color-scheme: dark)').matches);
     if (!window || !window.matchMedia) { return }
     // Dark theme
     var favicon = document.createElement('link');
