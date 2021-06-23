@@ -13,6 +13,7 @@ yarn add @palazzinacreativa/theme-favicon
 Then you can install your plugin using favicons url as paramaters
 ```
 ...
+import Vue from 'vue'
 import themeFavicon from '@palazzinacreativa/theme-favicon'
 
 Vue.use(themeFavicon, {
