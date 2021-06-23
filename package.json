@@ -1,6 +1,6 @@
 {
   "name": "@palazzinacreativa/theme-favicon",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "main": "dist/themefavicon.umd.js",
   "author": "PalazzinaCreativa",
   "module": "dist/themefavicon.esm.js",
