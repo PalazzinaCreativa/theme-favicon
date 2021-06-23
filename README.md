@@ -1,24 +1,22 @@
 # theme-favicon
+Vue plugin to switch favicon on browser dark or light theme
+## Installation
+```
+npm i @palazzinacreativa/theme-favicon
+```
+or
+```
+yarn add @palazzinacreativa/theme-favicon
 
-## Project setup
 ```
-npm install
-```
+Then you can install your plugin using favicons url as paramaters
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+...
+import themeFavicon from '@palazzinacreativa/theme-favicon'
 
-### Compiles and minifies for production
+Vue.use(themeFavicon, {
+  lightThemeIcon: '/path-to/light-theme-favicon.ico',
+  darkThemeIcon: '/path-to/dark-theme-favicon.ico'
+})
+...
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
