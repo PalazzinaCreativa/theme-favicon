@@ -17,7 +17,6 @@
       console.warn('Theme Favicon: no favicon URL for light theme found.');
       return
     }
-    console.log('ththht', window, window.matchMedia, window.matchMedia('(prefers-color-scheme: dark)').matches);
     if (!window || !window.matchMedia) { return }
     // Dark theme
     var favicon = document.createElement('link');
@@ -29,9 +28,14 @@
       // Light theme
       : icons.lightThemeIcon;
 
-    var currentIcon = document.querySelector('[rel=icon]');
+    var currentIcon = document.querySelectorAll('[rel=icon]');
+    console.log('current', currentIcon);
     // Check if current icon exists and is a
-    if (currentIcon) { currentIcon.parentNode.removeChild(currentIcon); }
+    if (currentIcon) {
+      currentIcon.forEach(function (el) {
+        el.parentNode.removeChild(el);
+      });
+    }
     document.head.appendChild(favicon);
   };
 
