@@ -23,7 +23,7 @@ const createFavicons = (vue, icons) => {
     : icons.lightThemeIcon
 
   const currentIcon = document.querySelectorAll('[rel=icon]')
-  console.log('current', currentIcon)
+  // console.log('current', currentIcon)
   // Check if current icon exists and is a
   if (currentIcon) {
     currentIcon.forEach((el) => {
